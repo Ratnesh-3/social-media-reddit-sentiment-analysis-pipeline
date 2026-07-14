@@ -4,6 +4,13 @@ A full-stack, real-time sentiment analysis pipeline that ingests posts from Redd
 
 Built entirely using native Python data structures for data handling (no `pandas` required) to keep dependencies lightweight and performance snappy.
 
+## 🏗️ Architecture
+
+```
+Reddit API (PRAW)  →  Ingestion Engine  →  Sentiment Analyzer (VADER + TextBlob)
+                                        →  Keyword Extractor (TF-IDF)
+                                        →  SQLite Database
+                                        →  Streamlit Dashboard (Plotly Charts + WordCloud)
 ## 🚀 Features
 
 - **Live Ingestion**: Connects to the Reddit API via PRAW to fetch the latest posts from subreddits of your choice.
