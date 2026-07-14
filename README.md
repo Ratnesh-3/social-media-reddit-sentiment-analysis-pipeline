@@ -1,10 +1,10 @@
-# Social Media Reddit Sentiment Analysis Pipeline 📊
+# Social Media Reddit Sentiment Analysis Pipeline
 
 A full-stack, real-time sentiment analysis pipeline that ingests posts from Reddit, analyzes their text for sentiment using dual NLP engines (VADER & TextBlob), stores the results in a local SQLite database, and presents the insights via a dynamic Streamlit dashboard.
 
 Built entirely using native Python data structures for data handling (no `pandas` required) to keep dependencies lightweight and performance snappy.
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Reddit API (PRAW)  →  Ingestion Engine  →  Sentiment Analyzer (VADER + TextBlob)
@@ -12,7 +12,7 @@ Reddit API (PRAW)  →  Ingestion Engine  →  Sentiment Analyzer (VADER + TextB
                                         →  SQLite Database
                                         →  Streamlit Dashboard (Plotly Charts + WordCloud)
 ```                                        
-## 🚀 Features
+## Features
 
 - **Live Ingestion**: Connects to the Reddit API via PRAW to fetch the latest posts from subreddits of your choice.
 - **Dual NLP Sentiment Analysis**: Analyzes text using both `vaderSentiment` and `TextBlob` for robust sentiment scoring.
@@ -40,7 +40,7 @@ Reddit API (PRAW)  →  Ingestion Engine  →  Sentiment Analyzer (VADER + TextB
 - **Streamlit**: Web Dashboard
 - **Plotly & WordCloud**: Data Visualization
 
-## 📦 Setup & Installation
+## Setup & Installation
 
 1. **Clone the repository**
    ```bash
@@ -88,7 +88,7 @@ python -m streamlit run dashboard/app.py
 ```
 The dashboard will be available in your browser at `http://localhost:8501`.
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
