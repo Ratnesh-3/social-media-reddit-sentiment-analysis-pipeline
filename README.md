@@ -11,6 +11,7 @@ Reddit API (PRAW)  →  Ingestion Engine  →  Sentiment Analyzer (VADER + TextB
                                         →  Keyword Extractor (TF-IDF)
                                         →  SQLite Database
                                         →  Streamlit Dashboard (Plotly Charts + WordCloud)
+```                                        
 ## 🚀 Features
 
 - **Live Ingestion**: Connects to the Reddit API via PRAW to fetch the latest posts from subreddits of your choice.
